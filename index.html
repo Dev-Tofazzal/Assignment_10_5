@@ -35,8 +35,8 @@
                     <div class="navbar-end">
                         <div class="flex items-center gap-4">
                             <img src="images/coin.png" alt="">
-                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span id="myBalance">500000</span><span
-                                    class="pl-2">BDT</span></p>
+                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span
+                                    id="myBalance">500000</span><span class="pl-2">BDT</span></p>
                         </div>
                     </div>
                 </div>
@@ -48,15 +48,16 @@
         <!-- nav btn part start here -->
         <div class="btn_nav mt-16 container mx-auto ">
             <div class="flex justify-center gap-4">
-                <button class="btn btn-lg">Donation</button>
-                <button class="btn btn-lg">History</button>
+                <button id="donation" class="btn btn-lg">Donation</button>
+                <button id="history" class="btn btn-lg">History</button>
+
             </div>
         </div>
         <!-- nav btn part end here -->
     </header>
     <main>
         <!-- card part start here -->
-        <div class="container mx-auto mt-10 ">
+        <div id="donation_card" class="container mx-auto mt-10 ">
             <!-- card-1 -->
             <div class="border-2 rounded-2xl border-indigo-700 ">
                 <div class="grid lg:grid-cols-2 grid-cols-1 p-12">
@@ -66,8 +67,8 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <img src="images/coin.png" alt="">
-                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span id="noakhaliDonate">000</span><span
-                                    class="pl-2">BDT</span></p>
+                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span
+                                    id="noakhaliDonate">000</span><span class="pl-2">BDT</span></p>
                         </div>
                         <div class="lg:mt-4">
                             <h2 class="lg:text-xl lg:font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -80,6 +81,8 @@
                                 class="input input-bordered  w-full  ">
                             <br>
                             <button id="btn_1" class="button btn btn-wide mt-10 w-full bg-[#B4F461]">Donate Now</button>
+                                
+                            
                         </div>
 
                     </div>
@@ -94,8 +97,8 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <img src="images/coin.png" alt="">
-                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span id="feniDonate">000</span><span
-                                    class="pl-2">BDT</span></p>
+                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span
+                                    id="feniDonate">000</span><span class="pl-2">BDT</span></p>
                         </div>
                         <div class="lg:mt-4">
                             <h2 class="lg:text-xl lg:font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -122,12 +125,18 @@
                     <div>
                         <div class="flex items-center gap-2">
                             <img src="images/coin.png" alt="">
-                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span id="quotaDonate">000</span><span
-                                    class="pl-2">BDT</span></p>
+                            <p class="lg:text-xl lg:font-bold sm:text-xs sm:font-medium"><span
+                                    id="quotaDonate">000</span><span class="pl-2">BDT</span></p>
                         </div>
                         <div class="lg:mt-4">
                             <h2 class="lg:text-xl lg:font-bold">Aid for Injured in the Quota Movement</h2>
-                            <p class="py-4"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                            <p class="py-4"> The recent Quota movement has resulted in numerous injuries and significant
+                                hardship for many individuals. Your support is crucial in providing medical assistance,
+                                rehabilitation, and necessary supplies to those affected. By contributing, you help
+                                ensure that injured individuals receive the care and support they need during this
+                                challenging time. Every donation plays a vital role in alleviating their suffering and
+                                aiding in their recovery. Please consider making a donation to support these brave
+                                individuals in their time of need.</p>
                             <input type="text" placeholder="Write Donation Amount" id="quotaInputValue"
                                 class="input input-bordered  w-full  ">
                             <br>
@@ -137,20 +146,30 @@
                     </div>
                 </div>
             </div>
-           
+
 
         </div>
         <!-- card part end here -->
+
+        <!-- history part start here -->
+        <div id="history_container">
+
+        </div>
+
+        <!-- history part end here -->
     </main>
     <footer>
+        <div class="bg-[#F9F7F3] h-40">
 
+        </div>
     </footer>
 
     <!-- script file add here -->
-     <script src="js/feature.js"></script>
+    <script src="js/commonFunction.js"></script>
     <script src="js/noakhali.js"></script>
     <script src="js/feni.js"></script>
     <script src="js/quota.js"></script>
+    <script src="js/feature.js"></script>
 </body>
 
 </html>

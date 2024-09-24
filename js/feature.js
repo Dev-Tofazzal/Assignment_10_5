@@ -1,11 +1,19 @@
-function getInputValueById(id){
-    const addMoney = document.getElementById(id).value ;
-    const addMoneyNumber = parseFloat(addMoney);
-    return addMoneyNumber;
-}
+document.getElementById("donation")
+.addEventListener("click",function(){
+    
+    showSectionById('donation_card')
+    
+    
+    
+})
 
-function getTextValueById(id){
-    const addText = document.getElementById(id).innerText;
-    const addTextNumber = parseFloat(addText);
-    return addTextNumber;
-}
+document.getElementById("history")
+.addEventListener("click",function(){
+    // showSectionById("history_section")
+    console.log("cllldldfdskd");
+    
+    showSectionById("history_container")
+})
+
+
+

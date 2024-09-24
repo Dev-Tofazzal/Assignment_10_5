@@ -12,6 +12,14 @@ document.getElementById("btn_3")
         const mybalance = getTextValueById("myBalance");
         const myNewBalance = mybalance - quotaAddMoney; 
         document.getElementById("myBalance").innerText = myNewBalance;
+
+        const div = document.createElement("div");
+        div.classList.add("text-center");
+        div.innerHTML = `
+        <h1>${quotaAddMoney}Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+        <p>${new Date().toLocaleString()}</p>
+        `
+        document.getElementById("history_container").appendChild(div)
     }
 
 

@@ -14,7 +14,13 @@ document.getElementById("btn_3")
         document.getElementById("myBalance").innerText = myNewBalance;
 
         const div = document.createElement("div");
-        div.classList.add("text-center");
+        div.classList.add("border-2");
+        div.classList.add("container");
+        div.classList.add("mx-auto");
+        div.classList.add("rounded-xl");
+        div.classList.add("p-4");
+        div.classList.add("m-4");
+        div.classList.add("text-xl");
         div.innerHTML = `
         <h1>${quotaAddMoney}Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
         <p>${new Date().toLocaleString()}</p>
@@ -22,6 +28,8 @@ document.getElementById("btn_3")
         document.getElementById("history_container").appendChild(div)
     }
 
-
+    else{
+        alert("please enter number not text or other things")
+    }
     
 })

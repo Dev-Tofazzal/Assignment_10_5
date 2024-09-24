@@ -12,12 +12,14 @@
     </style>
 </head>
 
-<body>
-    <header>
+<body class="relative">
+    <header class="sticky top-0">
+      
+       <div class="sticky top-0 z-10">
         <div class="bg-[#F9F7F3] ">
             <div class="container mx-auto pt-4 pb-12 ">
                 <!-- nav part start here -->
-                <div class="navbar  ">
+                <div class="navbar ">
                     <!-- nav start -->
                     <div class="navbar-start">
                         <button id="blog_btn" class="btn  sm:btn-sm md:btn-md lg:btn-lg">Blog</button>
@@ -46,13 +48,15 @@
 
         </div>
         <!-- nav btn part start here -->
-        <div class="btn_nav mt-16 container mx-auto ">
+        <div class="btn_nav mt-10 container mx-auto mb-4">
             <div class="flex justify-center gap-4">
                 <button id="donation" class="btn btn-lg">Donation</button>
                 <button id="history" class="btn btn-lg">History</button>
 
             </div>
         </div>
+        <hr>
+       </div>
         <!-- nav btn part end here -->
     </header>
     <main>
@@ -208,7 +212,7 @@
         
         <!-- history part start here -->
         
-        <div id="history_container" class="hidden">
+        <div id="history_container" class="hidden mb-8">
 
         </div>
         <!-- history part end here -->

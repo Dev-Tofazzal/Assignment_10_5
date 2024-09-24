@@ -19,7 +19,7 @@ document.getElementById("btn_1").addEventListener("click",function(event){
         `
         document.getElementById("history_container").appendChild(div)
 
-        
+
     }
     else{
         alert("tik nai")
